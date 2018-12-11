@@ -1,0 +1,14 @@
+﻿<Window x:Class="EncryptedFileManager.RenameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EncryptedFileManager"
+        mc:Ignorable="d"
+        Title="Rename" Height="180" Width="550">
+    <StackPanel>
+        <TextBlock Text="Enter the name you would like to change your file to.(exclude the extension)" FontSize="15" Margin="20,10"/>
+        <TextBox Height="30" FontSize="15" Margin="20,10" Name="FileChanger"/>
+        <Button Height="30" Width="60" Content="Submit" HorizontalAlignment="Right" Margin="20,10" IsDefault="True" Click="SubmitRename_Click"/>
+    </StackPanel>
+</Window>

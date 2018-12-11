@@ -1,0 +1,25 @@
+﻿<Window x:Class="EncryptedFileManager.RegistrationScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EncryptedFileManager"
+        mc:Ignorable="d"
+        Title="RegistrationScreen" Height="355" Width="300" Background="Gray" WindowStartupLocation="CenterScreen"
+        Closing="Window_Closing">
+    
+    <Border Background="White" CornerRadius="40" Margin="20">
+        <StackPanel Margin="20">
+            <Label Content="Registration" Foreground="Black" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator/>
+            <Label Content="Username:" Foreground="Black"/>
+            <TextBox Name="txtUsername" Foreground="Black"/>
+            <Label Content="Password:" Foreground="Black"/>
+            <PasswordBox Name="txtPassword" Foreground="Black"/>
+            <Label Content="Display Name:" Foreground="Black"/>
+            <TextBox Name="txtDisplayName" Foreground="Black"/>
+            <Button Name="btnSubmit" Content="Submit" Background="Gray" Foreground="White" Margin="60,10" Click="Register_Click"/>
+            <TextBlock  HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" FontSize="10" Foreground="Red" Name="RegErrMessage"/>
+        </StackPanel>
+    </Border>
+</Window>
